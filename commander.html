@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commander — Natsu Studio</title>
+<meta name="description" content="Natsu Studio — Discord, design, Roblox, montage, publicité et vêtements.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><div class="brand-mark">🦊</div><div>NATSU <span>STUDIO</span></div></a>
+    <button class="mobile-menu" aria-label="Menu">☰</button>
+    <nav class="nav-links"><a class="" href="index.html">Accueil</a><a class="" href="services.html">Services</a><a class="" href="boutique.html">Boutique</a><a class="" href="portfolio.html">Portfolio</a><a class="active" href="commander.html">Commander</a><a class="" href="contact.html">Contact</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="page-head"><div class="container">
+ <div class="eyebrow">Commande</div><h1>Passer une <span>commande</span></h1>
+ <p>Décris ton projet le plus précisément possible. Le formulaire prépare un e-mail : tu pourras ensuite confirmer le prix et les modalités avec le client.</p>
+</div></section>
+<section class="section"><div class="container">
+<form class="form" id="orderForm">
+ <label for="name">Nom / pseudo *</label><input id="name" name="name" required placeholder="Ton pseudo">
+ <label for="discord">Pseudo Discord</label><input id="discord" name="discord" placeholder="exemple">
+ <label for="service">Service *</label>
+ <select id="service" name="service" required><option value="">Choisir un service</option><option value="discord">Discord</option><option value="design">Design</option><option value="montage">Montage vidéo</option><option value="roblox">Roblox</option><option value="advertising">Publicité</option></select>
+ <label for="formula">Formule *</label><select id="formula" name="formula" required><option value="">Choisir une formule</option></select>
+ <label for="description">Description *</label><textarea id="description" name="description" required placeholder="Explique ce que tu veux : couleurs, texte, style, références, dimensions, etc."></textarea>
+ <div class="notice">🔒 Ne demande jamais de mot de passe Discord, Roblox ou autre. Le client ne doit fournir que les informations nécessaires à la commande.</div>
+ <button class="btn" type="submit">Envoyer ma demande →</button>
+ <p class="small" id="orderResult"></p>
+</form>
+</div></section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>NATSU STUDIO</strong><br><span class="small">Tes idées, ma création.</span></div>
+    <div class="small">© 2026 Natsu Studio — Projet indépendant</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
