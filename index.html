@@ -2,72 +2,36 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accueil — Natsu Studio</title>
-<meta name="description" content="Natsu Studio — Discord, design, Roblox, montage, publicité et vêtements.">
-<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Natsu Studio</title>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html"><div class="brand-mark">🦊</div><div>NATSU <span>STUDIO</span></div></a>
-    <button class="mobile-menu" aria-label="Menu">☰</button>
-    <nav class="nav-links"><a class="active" href="index.html">Accueil</a><a class="" href="services.html">Services</a><a class="" href="boutique.html">Boutique</a><a class="" href="portfolio.html">Portfolio</a><a class="" href="commander.html">Commander</a><a class="" href="contact.html">Contact</a></nav>
-  </div>
+<header class="topbar">
+  <a class="brand" href="index.html"><img src="favicon.svg" alt=""> Natsu Studio</a>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="orders.html">Commander</a>
+    <div class="account-menu" id="accountMenu">
+      <button id="accountButton" class="nav-button">👤 Mon compte ▾</button>
+      <div class="dropdown" id="accountDropdown">
+        <a href="account.html">👤 Mon compte</a>
+        <a href="orders.html">📦 Mes commandes</a>
+        <a href="settings.html">⚙️ Paramètres</a>
+      </div>
+    </div>
+  </nav>
 </header>
-
-<main>
-<section class="hero">
- <div class="container hero-grid">
-  <div>
-   <div class="eyebrow">Studio créatif • Gaming • Japonais</div>
-   <h1><span>NATSU</span><br>STUDIO</h1>
-   <p class="lead">Tes idées, ma création. Des services simples et abordables pour Discord, Roblox, design, montage, publicité et bientôt une boutique de vêtements.</p>
-   <div class="actions">
-    <a class="btn" href="commander.html">🛒 Commander</a>
-    <a class="btn secondary" href="services.html">Découvrir les services</a>
-   </div>
-   <div class="kpi">
-    <div class="card"><strong>0 €</strong><span class="small">pour commencer</span></div>
-    <div class="card"><strong>5 €</strong><span class="small">premiers services</span></div>
-    <div class="card"><strong>⚡</strong><span class="small">commande simple</span></div>
-   </div>
-  </div>
-  <div class="hero-card">
-   <img src="assets/natsu-studio-preview.png" alt="Aperçu visuel Natsu Studio">
-  </div>
- </div>
-</section>
-
-<section class="section">
- <div class="container">
-  <div class="section-head"><div><h2>Nos services</h2><p>Commence petit, crée un portfolio, puis augmente progressivement tes offres.</p></div></div>
-  <div class="grid">
-   <article class="card"><div class="icon">🎮</div><h3>Discord</h3><p>Création et configuration de serveurs, rôles, salons, tickets et bots.</p><div class="price">À partir de 5 €</div><a class="btn secondary" href="services.html#discord">Voir</a></article>
-   <article class="card"><div class="icon">🎨</div><h3>Design</h3><p>Logos, icônes, bannières, miniatures et créations personnalisées.</p><div class="price">À partir de 3 €</div><a class="btn secondary" href="services.html#design">Voir</a></article>
-   <article class="card"><div class="icon">🎮</div><h3>Roblox</h3><p>Vêtements, petites interfaces et créations pour tes projets Roblox.</p><div class="price">À partir de 3 €</div><a class="btn secondary" href="services.html#roblox">Voir</a></article>
-  </div>
- </div>
-</section>
-
-<section class="section">
- <div class="container">
-  <div class="banner">
-   <div><h2>Prêt à commander ?</h2><p class="lead">Choisis ton service, décris ton projet et envoie ta demande.</p></div>
-   <a class="btn" href="commander.html">Commander maintenant →</a>
-  </div>
- </div>
-</section>
+<main class="hero">
+  <section class="hero-card">
+    <span class="pill">🦊 Création digitale</span>
+    <h1>Bienvenue chez <span>Natsu Studio</span></h1>
+    <p>Création de serveurs Discord, designs, visuels et services numériques à petits prix.</p>
+    <div class="actions"><a class="btn primary" href="services.html">Découvrir les services</a><a class="btn" href="auth.html">Créer un compte</a></div>
+  </section>
 </main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <div><strong>NATSU STUDIO</strong><br><span class="small">Tes idées, ma création.</span></div>
-    <div class="small">© 2026 Natsu Studio — Projet indépendant</div>
-  </div>
-</footer>
-
-<script src="js/script.js"></script>
+<script type="module" src="js/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Compte — Natsu Studio</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css"></head><body>
+<main class="auth-wrap"><div class="auth-card"><a class="brand" href="index.html"><img src="favicon.svg" alt=""> Natsu Studio</a><h1 id="authTitle">Créer un compte</h1>
+<div id="signupFields"><label>Nom d'utilisateur<input id="username" autocomplete="username"></label></div>
+<label>Adresse e-mail<input id="email" type="email" autocomplete="email"></label>
+<div id="passwordFields"><label>Mot de passe<input id="password" type="password" autocomplete="new-password"></label><label class="check"><input id="stay" type="checkbox" checked> Voulez-vous rester connecté ?</label></div>
+<div id="methodChoice" class="choice"><p>Comment veux-tu sécuriser ton compte ?</p><label><input type="radio" name="method" value="password" checked> Mot de passe</label><label><input type="radio" name="method" value="otp"> Code de vérification par e-mail</label></div>
+<button id="mainAuth" class="btn primary">Créer mon compte</button><button id="google" class="btn google">🌐 Continuer avec Google</button>
+<p id="authMsg" class="message"></p><p class="switch"><span id="switchText">Déjà un compte ?</span> <button id="switch" class="link">Se connecter</button></p>
+</div></main><script type="module" src="js/auth.js"></script></body></html>
