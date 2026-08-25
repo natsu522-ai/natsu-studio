@@ -1,37 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Natsu Studio</title>
-<link rel="icon" href="favicon.svg">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Natsu Studio</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
+
 <body>
-<header class="topbar">
-  <a class="brand" href="index.html"><img src="favicon.svg" alt=""> Natsu Studio</a>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="orders.html">Commander</a>
-    <div class="account-menu" id="accountMenu">
-      <button id="accountButton" class="nav-button">👤 Mon compte ▾</button>
-      <div class="dropdown" id="accountDropdown">
-        <a href="account.html">👤 Mon compte</a>
-        <a href="orders.html">📦 Mes commandes</a>
-        <a href="settings.html">⚙️ Paramètres</a>
+
+  <header class="site-header">
+    <nav class="navbar">
+
+      <a href="index.html" class="logo">
+        Natsu Studio
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="commander.html">Commander</a>
+
+        <div class="account-menu">
+          <button class="account-button" type="button">
+            👤 Mon compte ▾
+          </button>
+
+          <div class="account-dropdown">
+            <a href="account.html">👤 Mon compte</a>
+            <a href="orders.html">📦 Mes commandes</a>
+            <a href="settings.html">⚙️ Paramètres</a>
+          </div>
+        </div>
       </div>
+
+      <button class="mobile-menu" type="button">
+        ☰
+      </button>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          🔥 Création digitale
+        </p>
+
+        <h1>
+          Bienvenue chez Natsu Studio
+        </h1>
+
+        <p class="hero-description">
+          Création de serveurs Discord, designs, visuels et services
+          numériques à petits prix.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="services.html" class="btn btn-primary">
+            Découvrir les services
+          </a>
+
+          <a href="auth.html" class="btn btn-secondary">
+            Créer un compte
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="services-preview">
+
+      <div class="section-heading">
+        <p class="eyebrow">Natsu Studio</p>
+
+        <h2>
+          Des services simples et accessibles
+        </h2>
+
+        <p>
+          Choisis le service dont tu as besoin et passe ta commande
+          directement depuis Natsu Studio.
+        </p>
+      </div>
+
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <h3>💬 Discord</h3>
+          <p>
+            Création et configuration de serveurs Discord adaptés
+            à tes besoins.
+          </p>
+
+          <a href="services.html">
+            Découvrir →
+          </a>
+        </article>
+
+
+        <article class="service-card">
+          <h3>🎨 Design</h3>
+          <p>
+            Logos, icônes, bannières et autres créations visuelles.
+          </p>
+
+          <a href="services.html">
+            Découvrir →
+          </a>
+        </article>
+
+
+        <article class="service-card">
+          <h3>🎮 Roblox</h3>
+          <p>
+            Créations et services pour tes projets Roblox.
+          </p>
+
+          <a href="services.html">
+            Découvrir →
+          </a>
+        </article>
+
+
+        <article class="service-card">
+          <h3>📢 Publicité</h3>
+          <p>
+            Création de publicités et solutions pour mettre ton
+            projet en avant.
+          </p>
+
+          <a href="services.html">
+            Découvrir →
+          </a>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section class="cta-section">
+
+      <h2>
+        Un projet en tête ?
+      </h2>
+
+      <p>
+        Découvre nos services ou commence directement ta commande.
+      </p>
+
+      <a href="commander.html" class="btn btn-primary">
+        Commander maintenant
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <p>
+      © 2026 Natsu Studio — Tous droits réservés.
+    </p>
+
+    <div>
+      <a href="contact.html">Contact</a>
+      <a href="services.html">Services</a>
+      <a href="auth.html">Compte</a>
     </div>
-  </nav>
-</header>
-<main class="hero">
-  <section class="hero-card">
-    <span class="pill">🦊 Création digitale</span>
-    <h1>Bienvenue chez <span>Natsu Studio</span></h1>
-    <p>Création de serveurs Discord, designs, visuels et services numériques à petits prix.</p>
-    <div class="actions"><a class="btn primary" href="services.html">Découvrir les services</a><a class="btn" href="auth.html">Créer un compte</a></div>
-  </section>
-</main>
-<script type="module" src="js/site.js"></script>
+
+  </footer>
+
+
+  <script src="js/site.js"></script>
+
 </body>
 </html>
